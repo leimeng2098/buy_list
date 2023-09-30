@@ -2,11 +2,7 @@ var shoplist={};
 shoplist.name="My Buylist 購物清單";
 shoplist.time="2021/7/28";
 shoplist.list=[
-  {name: "滑鼠" ,price: 500},
-  {name: "電繪板" ,price: 3000},
-  {name: "筆電" ,price: 30000},
-  {name: "小米手機" ,price: 12000},
-  {name: "羊毛氈" ,price: 200},
+  
 ];
 
 var item_html="<li id={{id}} class='buy_item'>{{num}}.{{item}}<div class='price'>{{price}}</div><div id={{del_id}} data_del_id='{{delid}}' class='del_btn'>X</div></li>";

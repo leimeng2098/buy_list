@@ -1,0 +1,94 @@
+@charset "UTF-8";
+* {
+  font-family: "Roboto Mono", monospace, "微軟正黑體";
+  position: relative;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  background-color: #334f6b;
+}
+
+#buylist {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  padding: 20px;
+  border: solid 5px #333;
+  background-color: #f3f3f3;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  padding: 20px;
+  margin-top: -20px;
+  margin-right: -20px;
+  margin-left: -20px;
+  border-bottom: solid 5px #333;
+  background-color: #508ac3;
+  color: #f3f3f3;
+}
+
+#items_list {
+  padding: 5px;
+  margin-top: 10px;
+}
+
+.buy_item {
+  padding: 5px;
+  list-style: none;
+  border: solid 3px;
+  margin-top: 10px;
+  font-weight: 900;
+}
+.buy_item input {
+  width: 100px;
+  padding: 2px;
+}
+.buy_item .price {
+  display: inline-block;
+  position: absolute;
+  padding-left: 8px;
+  padding-right: 8px;
+  right: 50px;
+  background-color: #BFFFBF;
+}
+.buy_item .price::before {
+  content: "$ ";
+}
+.buy_item .del_btn {
+  display: inline-block;
+  position: absolute;
+  padding: 0px 6px;
+  right: 10px;
+  cursor: pointer;
+}
+.buy_item .del_btn:hover {
+  background-color: #FF4545;
+  color: #f3f3f3;
+  border-radius: 5px;
+}
+.buy_item .addbtn {
+  cursor: pointer;
+  margin: 10px;
+  padding: 5px;
+}
+.buy_item .addbtn:hover {
+  background-color: #FF4545;
+  color: #eee;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+.total {
+  background-color: #508ac3;
+  color: #f3f3f3;
+  border: solid 3px #333;
+}
+.total .price {
+  background-color: #508ac3;
+}
